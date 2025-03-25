@@ -44,3 +44,23 @@ free(tmp);
 ptr->suiv=NULL;
 return tete;
 }
+liste *rembourser(liste,char* refer){
+  scanf("%s",refer);
+liste *tmp=tete;
+liste *ptr=tete;
+while(tmp!=NULL){
+if(strcmp(refer, tmp->cellule.Reference)=0,tmp=tete){
+supprimer_debut();
+}
+if(strcmp(refer, tmp->cellule.Reference)=0,tmp->suiv=NULL){
+supprimer_fin();
+}
+ptr=tmp;
+tmp=tmp->suiv;
+if(strcmp(refer, tmp->cellule.Reference)=0,tmp!=tete&&tmp->suiv!=NULL){
+ptr->suiv=tmp->suiv;
+  free(tmp);
+  tmp->suiv=NULL;
+}
+
+
