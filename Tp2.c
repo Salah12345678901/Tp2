@@ -62,5 +62,7 @@ ptr->suiv=tmp->suiv;
   free(tmp);
   tmp->suiv=NULL;
 }
-
+}
+return tete;
+}
 
